@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Seleccione Universidad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupUniversidad"
+        android:layout_width="329dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/radioButtonUntels"
+            android:layout_width="96dp"
+            android:layout_height="match_parent"
+            android:text="@string/radiobutton_untels" />
+
+        <RadioButton
+            android:id="@+id/radioButtonUnmsm"
+            android:layout_width="106dp"
+            android:layout_height="match_parent"
+            android:text="@string/radioButtonUnmsm"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="164dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonUpeu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/radiobutton_upeu"
+            tools:layout_editor_absoluteX="75dp"
+            tools:layout_editor_absoluteY="147dp" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
